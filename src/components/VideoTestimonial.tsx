@@ -109,14 +109,17 @@ export function VideoTestimonial({
 
           // PLAYER REAL
           onClick={(e) => {
-            const video = e.currentTarget;
+  const video = e.currentTarget;
 
-            setActiveVideo(true);
+  // ativa apenas primeira vez
+  if (!activeVideo) {
+    setActiveVideo(true);
 
-            video.muted = false;
+    video.muted = false;
 
-            video.play();
-          }}
+    video.play();
+  }
+}}
         />
 
         {/* OVERLAY */}
