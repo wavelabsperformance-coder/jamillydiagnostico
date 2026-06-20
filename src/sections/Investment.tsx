@@ -4,43 +4,74 @@ import { waLink } from "@/lib/site";
 
 export function Investment() {
   return (
-    <section className="relative bg-surface py-24 md:py-20">
-      <div className="mx-auto max-w-3xl px-6 md:px-12 text-center">
+    <section className="relative overflow-hidden bg-[#260404] py-32 md:py-40">
+      {/* Glow de fundo */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#4A0A0A]/40 blur-[140px]" />
+      </div>
+
+      <div className="relative mx-auto max-w-4xl px-6 md:px-12 text-center">
         <Reveal>
-          <span className="eyebrow text-wine">Investimento</span>
+          <span className="eyebrow text-[#C6A86A]">
+            Investimento
+          </span>
         </Reveal>
 
         <Reveal delay={0.1}>
-          <h2 className="serif-display text-3xl md:text-4xl text-foreground mt-8 mb-16 leading-[1.15]">
-            Diagnóstico Estratégico Individual
+          <h2 className="serif-display mt-10 text-[#F8F2EB] text-3xl md:text-5xl lg:text-6xl leading-[1.1]">
+            Imersão que transforma
           </h2>
         </Reveal>
 
+        <Reveal delay={0.15}>
+          <p className="mt-6 text-[#F8F2EB]/70 uppercase tracking-[0.3em] text-xs md:text-sm">
+            Atendimento individual conduzido por Jamilly Pacheco
+          </p>
+        </Reveal>
+
         <Reveal delay={0.2}>
-          <div className="relative inline-flex flex-col items-center bg-background px-14 py-16 md:px-24 md:py-20 shadow-[var(--shadow-editorial)]">
-            <span className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-4 bg-surface text-[10px] tracking-[0.4em] uppercase text-gold">
-              Vagas limitadas
-            </span>
-            <span className="font-serif italic text-ink-soft text-sm tracking-wide mb-3">
-              Atendimento individual com Jamilly Pacheco
-            </span>
-            <div className="flex items-baseline gap-2">
-              <span className="font-serif text-foreground text-2xl">R$</span>
-              <span className="font-serif text-foreground text-7xl md:text-8xl leading-none">597</span>
+          <div className="mt-20">
+            <div className="mx-auto h-px w-24 bg-[#C6A86A]/60" />
+
+            <div className="mt-10 flex items-start justify-center">
+              <span className="font-serif text-[#F8F2EB]/80 text-3xl md:text-4xl mt-5 mr-2">
+                R$
+              </span>
+
+              <span className="font-serif text-[#F8F2EB] text-[7rem] md:text-[10rem] leading-none">
+                600
+              </span>
             </div>
-            <div className="mt-8 w-16 h-px bg-gold" />
-            <p className="mt-6 text-sm text-ink-soft font-light max-w-xs">
-              Dois encontros individuais. Processo personalizado. Atendimento conduzido diretamente por Jamilly.
-            </p>
+
+            <div className="mx-auto mt-10 h-px w-24 bg-[#C6A86A]/60" />
+          </div>
+        </Reveal>
+
+        <Reveal delay={0.25}>
+          <div className="mt-16 space-y-4 text-[#F8F2EB]/85 text-lg md:text-xl">
+            <p>Até 2h30 de atendimento individual</p>
+            <p>Presencial ou online</p>
+            <p>Processo personalizado</p>
+            <p>Material de continuidade entregue após o encontro</p>
           </div>
         </Reveal>
 
         <Reveal delay={0.3}>
-          <div className="mt-12 inline-block">
-            <CTAButton href={waLink()} variant="primary">
-              Quero garantir minha vaga
-            </CTAButton>
-          </div>
+      <div className="mt-16">
+  <CTAButton
+    href={waLink()}
+    variant="primary"
+    className="bg-[#F8F2EB] text-[#260404] hover:bg-[#260404] hover:text-[#F8F2EB] transition-all duration-300"
+  >
+    Agendar minha imersão
+  </CTAButton>
+</div>
+        </Reveal>
+
+        <Reveal delay={0.35}>
+          <p className="mt-8 text-[#C6A86A] text-xs uppercase tracking-[0.4em]">
+            Vagas limitadas
+          </p>
         </Reveal>
       </div>
     </section>

@@ -11,7 +11,7 @@ export function Hero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <img
-          src="/images/hero.jpg"
+          src="/images/hero.jpeg"
           alt="Mulher em momento contemplativo de clareza interior"
           className="w-full h-full object-cover object-[center_15%] scale-105"
         />
@@ -30,7 +30,7 @@ export function Hero() {
               className="flex items-center gap-4 mb-8"
             >
               <span className="w-12 h-px bg-accent" />
-              <span className="eyebrow text-accent">Diagnóstico Estratégico</span>
+              <span className="eyebrow text-accent">Imersão que Transforma</span>
             </motion.div>
 
             <motion.h1
@@ -39,8 +39,7 @@ export function Hero() {
               transition={{ duration: 1.4, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
               className="serif-display text-background text-[2.4rem] sm:text-5xl md:text-6xl lg:text-[4.5rem] leading-[1.02] mb-8"
             >
-              Existe um motivo pelo qual <em className="not-italic text-accent/95">você sente</em> que está parada,
-              mesmo tentando tanto avançar.
+              Clareza para enxergar o que está <em className="not-italic text-accent/95">travando sua vida, </em> suas decisões e seus próximos passos.
             </motion.h1>
 
             <motion.div
@@ -50,11 +49,10 @@ export function Hero() {
               className="max-w-xl space-y-5 mb-10"
             >
               <p className="text-background/85 text-base md:text-lg leading-relaxed font-light">
-                E o problema talvez não seja falta de capacidade, esforço ou dedicação.
+               Uma experiência individual e personalizada para mulheres que sentem que chegou a hora de organizar pensamentos, emoções, estratégias e criar direção para o próximo nível da sua vida.
+
               </p>
-              <p className="text-background/70 text-sm md:text-base leading-relaxed font-light">
-                Talvez seja falta de clareza sobre o que realmente está travando sua vida, suas decisões e seus próximos passos.
-              </p>
+             
             </motion.div>
 
             <motion.div
@@ -62,13 +60,16 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 1.4 }}
             >
-              <CTAButton href={waLink()} variant="light">
-                Quero agendar meu diagnóstico
-              </CTAButton>
+             <CTAButton href={waLink()} variant="primary">
+  QUERO AGENDAR MINHA IMERSÃO
+</CTAButton>
               <p className="mt-5 text-[11px] tracking-[0.25em] uppercase text-background/55">
-                Atendimento individual <span className="mx-2 text-accent">·</span> Processo personalizado{" "}
-                <span className="mx-2 text-accent">·</span> Vagas limitadas
-              </p>
+  Atendimento presencial e online
+  <span className="mx-2 text-accent">·</span>
+  Processo individual
+  <span className="mx-2 text-accent">·</span>
+  Vagas limitadas
+</p>
             </motion.div>
           </div>
 

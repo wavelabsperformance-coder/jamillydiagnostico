@@ -41,21 +41,20 @@ export function EmotionalConnection() {
 
                 {/* TITLE */}
                 <h2 className="serif-display text-[2.7rem] leading-[0.92] tracking-[-0.045em] text-foreground md:text-[4.5rem]">
-                  Você sente
-                  <br />
-                  que algo
-                  <br />
-                  precisa mudar…
-                </h2>
+  Você sente
+  <br />
+  que algo
+  <br />
+  precisa mudar.
+</h2>
 
-                {/* SUBTITLE */}
-                <p className="mt-7 serif-display text-[1.55rem] leading-[1.08] tracking-[-0.03em] text-foreground/58 md:text-[2.5rem]">
-                  mas não consegue
-                  <br />
-                  enxergar
-                  <br />
-                  exatamente o quê.
-                </p>
+<p className="mt-7 serif-display text-[1.55rem] leading-[1.08] tracking-[-0.03em] text-foreground/58 md:text-[2.5rem]">
+  Mas ainda não
+  <br />
+  consegue enxergar
+  <br />
+  exatamente o quê.
+</p>
 
               </div>
             </Reveal>
@@ -150,10 +149,10 @@ export function EmotionalConnection() {
                       <div className="pointer-events-none absolute inset-x-0 bottom-0 z-30 p-6 md:p-8">
 
                         <div className="max-w-[300px]">
-                          <p className="font-serif text-[1.25rem] italic leading-snug text-white md:text-[1.5rem]">
-                            “Às vezes o problema não é falta de força.
-                            É excesso de silêncio interno.”
-                          </p>
+                         <p className="font-serif text-[1.25rem] italic leading-snug text-white md:text-[1.5rem]">
+  “Talvez não seja falta de informação.
+  Talvez seja excesso de ruído.”
+</p>
 
                           <div className="mt-5 flex items-center gap-3">
                             <span className="h-px w-8 bg-white/50" />
@@ -185,30 +184,34 @@ export function EmotionalConnection() {
                 <div className="mb-12 border-l border-border pl-6 md:mb-14">
                   <div className="space-y-4">
 
-                    <p className="font-serif text-[1.15rem] italic text-foreground/72 md:text-[1.25rem]">
-                      Você pensa.
-                    </p>
+                   <p className="font-serif text-[1.15rem] italic text-foreground/72 md:text-[1.25rem]">
+  Você pensa.
+</p>
 
-                    <p className="font-serif text-[1.15rem] italic text-foreground/72 md:text-[1.25rem]">
-                      Analisa.
-                    </p>
+<p className="font-serif text-[1.15rem] italic text-foreground/72 md:text-[1.25rem]">
+  Analisa.
+</p>
 
-                    <p className="font-serif text-[1.15rem] italic text-foreground/72 md:text-[1.25rem]">
-                      Tenta encontrar respostas.
-                    </p>
+<p className="font-serif text-[1.15rem] italic text-foreground/72 md:text-[1.25rem]">
+  Busca respostas.
+</p>
 
-                    <p className="font-serif text-[1.15rem] italic text-foreground/72 md:text-[1.25rem]">
-                      Busca soluções.
-                    </p>
+<p className="font-serif text-[1.15rem] italic text-foreground/72 md:text-[1.25rem]">
+  Consome conteúdos.
+</p>
+
+<p className="font-serif text-[1.15rem] italic text-foreground/72 md:text-[1.25rem]">
+  Tenta resolver sozinho.
+</p>
 
                   </div>
                 </div>
 
                 {/* SUPPORT TEXT */}
-                <p className="max-w-[320px] text-[1rem] leading-[1.9] text-foreground/72 md:text-[1.08rem]">
-                  Mas, mesmo assim, continua sentindo
-                  que está presa no mesmo lugar.
-                </p>
+              <p className="max-w-[320px] text-[1rem] leading-[1.9] text-foreground/72 md:text-[1.08rem]">
+  Mas, mesmo assim, continua sentindo
+  que existe algo desalinhado.
+</p>
 
                 {/* LIST */}
                 <div className="mt-12 space-y-5 md:mt-14">

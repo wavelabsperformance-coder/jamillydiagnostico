@@ -1,69 +1,128 @@
 import { Reveal } from "@/components/Reveal";
-import { Check, Minus } from "lucide-react";
 
 const forYou = [
-  "Você sente que está pronta para outra fase, mas falta clareza sobre como chegar lá.",
-  "Você é uma mulher que decide com profundidade — e quer parar de adiar escolhas importantes.",
-  "Você busca um processo individual, estratégico e humano, não mais um curso.",
-  "Você está disposta a olhar para si com honestidade para enxergar o que realmente está travando.",
+  "Deseja parar de adiar decisões importantes.",
+  "Busca um processo individual, profundo e personalizado.",
+  "Está disposto a olhar com honestidade para aquilo que precisa ser transformado.",
+  "Busca clareza para seguir com mais consciência.",
 ];
 
 const notForYou = [
-  "Você procura uma fórmula rápida ou uma resposta milagrosa.",
-  "Você não está disposta a entrar em contato com o que precisa ser visto.",
-  "Você espera ser convencida a mudar — em vez de escolher a partir de si.",
+  "Procura soluções milagrosas.",
+  "Deseja apenas ouvir o que quer ouvir.",
+  "Não está disposto a assumir responsabilidade pela própria transformação.",
 ];
 
 export function ForWho() {
   return (
     <section className="relative bg-background py-24 md:py-20">
-      <div className="mx-auto max-w-[1400px] px-6 md:px-12 grid md:grid-cols-12 gap-16">
-        <div className="md:col-span-7">
+      <div className="mx-auto max-w-[1400px] px-6 md:px-12">
+        
+        {/* TOPO */}
+        <div className="mb-16 max-w-4xl">
           <Reveal>
-            <span className="eyebrow text-wine">Para quem é</span>
+            <span className="eyebrow text-wine">
+              Para quem é
+            </span>
           </Reveal>
+
           <Reveal delay={0.1}>
-            <h2 className="serif-display text-3xl md:text-5xl text-foreground mt-8 mb-12 leading-[1.1]">
-              Pensado para mulheres que escolhem se ouvir antes de agir.
+            <h2 className="serif-display mt-8 text-4xl leading-[1.05] text-foreground md:text-5xl lg:text-6xl">
+              Para quem sente que existe uma próxima fase esperando para ser vivida.
             </h2>
           </Reveal>
-
-          <ul className="space-y-8">
-            {forYou.map((t, i) => (
-              <Reveal key={t} delay={0.1 + i * 0.05}>
-                <li className="flex items-start gap-5 group">
-                  <span className="mt-1 shrink-0 w-9 h-9 rounded-full border border-wine/30 flex items-center justify-center text-wine group-hover:bg-wine group-hover:text-background transition-colors duration-500">
-                    <Check className="w-4 h-4" />
-                  </span>
-                  <p className="font-serif text-lg md:text-xl text-foreground/90 leading-snug max-w-xl">
-                    {t}
-                  </p>
-                </li>
-              </Reveal>
-            ))}
-          </ul>
         </div>
 
-        <div className="md:col-span-5 md:border-l md:border-border/60 md:pl-12">
-          <Reveal>
-            <span className="eyebrow text-ink-soft">Para quem não é</span>
-          </Reveal>
-          <Reveal delay={0.1}>
-            <h3 className="serif-display text-2xl md:text-3xl text-ink-soft mt-8 mb-10 leading-[1.15] italic">
-              Com transparência — esse processo não serve para todas.
-            </h3>
+        {/* CARDS */}
+        <div className="grid gap-6 md:grid-cols-2">
+
+          {/* CARD 1 */}
+          <Reveal
+            className="
+              group
+              relative
+              overflow-hidden
+              rounded-[28px]
+              bg-[#260404]
+              p-10
+              md:p-12
+              transition-all
+              duration-500
+              hover:-translate-y-1
+              hover:shadow-[0_20px_50px_rgba(38,4,4,0.25)]
+            "
+          >
+            <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+              <div className="absolute inset-0 bg-gradient-to-br from-white/[0.03] to-transparent" />
+            </div>
+
+            <div className="relative z-10">
+              <span className="text-xs uppercase tracking-[0.3em] text-accent">
+                Para quem é
+              </span>
+
+              <h3 className="mt-6 mb-10 font-serif text-3xl text-white">
+                O processo foi criado para quem...
+              </h3>
+
+              <div className="space-y-6">
+                {forYou.map((item) => (
+                  <div
+                    key={item}
+                    className="border-b border-white/10 pb-6 last:border-0 last:pb-0"
+                  >
+                    <p className="text-lg leading-relaxed text-white/85">
+                      {item}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </Reveal>
 
-          <ul className="space-y-6">
-            {notForYou.map((t, i) => (
-              <Reveal key={t} delay={0.1 + i * 0.05}>
-                <li className="flex items-start gap-4 opacity-70">
-                  <Minus className="w-4 h-4 mt-1.5 text-ink-soft shrink-0" />
-                  <p className="text-sm md:text-base text-ink-soft font-light leading-relaxed">{t}</p>
-                </li>
-              </Reveal>
-            ))}
-          </ul>
+          {/* CARD 2 */}
+          <Reveal
+            delay={0.1}
+            className="
+              group
+              relative
+              overflow-hidden
+              rounded-[28px]
+              border
+              border-[#260404]/10
+              bg-white
+              p-10
+              md:p-12
+              transition-all
+              duration-500
+              hover:-translate-y-1
+              hover:shadow-[0_20px_50px_rgba(0,0,0,0.06)]
+            "
+          >
+            <div className="relative z-10">
+              <span className="text-xs uppercase tracking-[0.3em] text-wine">
+                Para quem não é
+              </span>
+
+              <h3 className="mt-6 mb-10 font-serif text-3xl text-foreground">
+                Este processo não é para quem...
+              </h3>
+
+              <div className="space-y-6">
+                {notForYou.map((item) => (
+                  <div
+                    key={item}
+                    className="border-b border-border pb-6 last:border-0 last:pb-0"
+                  >
+                    <p className="text-lg leading-relaxed text-foreground/75">
+                      {item}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </Reveal>
+
         </div>
       </div>
     </section>

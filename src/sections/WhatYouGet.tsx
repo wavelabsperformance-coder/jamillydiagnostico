@@ -4,49 +4,46 @@ const items = [
   {
     n: "I",
     t: "Clareza",
-    d: "Sobre o que de fato está travando suas decisões.",
+    d: "Sobre o que realmente está travando suas decisões.",
   },
   {
     n: "II",
     t: "Direcionamento",
-    d: "Um caminho coerente para sua próxima fase.",
+    d: "Para sua próxima fase de forma mais consciente.",
   },
   {
     n: "III",
-    t: "Organização mental",
-    d: "Aquilo que parecia embaralhado, em ordem.",
+    t: "Organização",
+    d: "Mental e emocional para enxergar prioridades.",
   },
   {
     n: "IV",
     t: "Plano de ação",
-    d: "Próximos passos definidos com inteligência.",
+    d: "Personalizado para a sua realidade atual.",
   },
   {
     n: "V",
-    t: "Segurança emocional",
-    d: "Para sustentar suas escolhas com firmeza.",
+    t: "Segurança",
+    d: "Para sustentar novas escolhas com mais confiança.",
   },
   {
     n: "VI",
-    t: "Próximos passos",
-    d: "Aquilo que finalmente aparece quando há clareza.",
+    t: "Um novo caminho",
+    d: "Mais consciente, claro e alinhado com quem você deseja ser.",
   },
 ];
 
 export function WhatYouGet() {
   return (
     <section className="relative overflow-hidden bg-background py-24 md:py-20">
-
       {/* SOFT BACKGROUND GLOW */}
-      <div className="absolute inset-0 pointer-events-none opacity-40">
+      <div className="pointer-events-none absolute inset-0 opacity-40">
         <div className="absolute left-1/2 top-0 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-[#2A120D]/10 blur-[140px]" />
       </div>
 
       <div className="relative mx-auto max-w-[1400px] px-6 md:px-12">
-
         {/* TOP CONTENT */}
         <div className="mb-16 grid gap-14 md:mb-24 md:grid-cols-12 md:gap-24">
-
           {/* LEFT */}
           <div className="md:col-span-5">
             <Reveal>
@@ -61,7 +58,7 @@ export function WhatYouGet() {
                 <br />
 
                 <em className="not-italic text-wine">
-                  Direção.
+                  Clareza para seguir em frente.
                 </em>
               </h2>
             </Reveal>
@@ -74,25 +71,22 @@ export function WhatYouGet() {
                 className="
                   max-w-[620px]
                   text-lg
-                  font-light
                   leading-[1.9]
                   tracking-[-0.01em]
                   text-foreground/80
                   md:text-[1.45rem]
                 "
               >
-                Cada encontro foi pensado para entregar algo que
-                não cabe em um curso, em um conteúdo ou em uma
-                resposta rápida da internet — clareza estratégica
-                feita para a sua vida.
+                Ao final do processo, você não recebe apenas percepções.
+                Você recebe clareza, direção e um novo olhar sobre aquilo
+                que antes parecia confuso.
               </p>
             </Reveal>
           </div>
         </div>
 
         {/* GRID */}
-        <div className="grid gap-px bg-[#2A120D]/10 md:grid-cols-2 lg:grid-cols-3">
-
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {items.map((it, i) => (
             <Reveal
               key={it.t}
@@ -101,47 +95,43 @@ export function WhatYouGet() {
                 group
                 relative
                 overflow-hidden
-                bg-gradient-to-b
-                from-[#2A120D]/[0.05]
-                to-[#1A0B08]/[0.025]
+                rounded-[28px]
+                bg-[#260404]
                 p-10
-                backdrop-blur-sm
                 transition-all
                 duration-500
-                hover:from-[#2A120D]/[0.08]
-                hover:to-[#1A0B08]/[0.05]
+                hover:-translate-y-1
+                hover:shadow-[0_20px_50px_rgba(38,4,4,0.35)]
+                active:-translate-y-1
+                active:shadow-[0_20px_50px_rgba(38,4,4,0.35)]
                 md:p-12
               "
             >
-
-              {/* HOVER GLOW */}
+              {/* HOVER EFFECT */}
               <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                <div className="absolute -top-20 left-1/2 h-40 w-40 -translate-x-1/2 rounded-full bg-[#6E3B2D]/10 blur-3xl" />
+                <div className="absolute inset-0 bg-gradient-to-br from-white/[0.03] to-transparent" />
               </div>
 
               {/* CONTENT */}
               <div className="relative z-10">
-
                 {/* TOP */}
                 <div className="mb-6 flex items-baseline gap-5">
-
-                  <span className="font-serif text-3xl text-gold">
+                  <span className="text-3xl font-semibold text-white/80">
                     {it.n}
                   </span>
 
-                  <span className="h-px flex-1 bg-border transition-colors duration-500 group-hover:bg-wine" />
+                  <span className="h-px flex-1 bg-white/15 transition-colors duration-500 group-hover:bg-white/30" />
                 </div>
 
                 {/* TITLE */}
-                <h3 className="mb-4 font-serif text-2xl tracking-[-0.03em] text-foreground md:text-3xl">
+                <h3 className="mb-4 text-2xl font-semibold tracking-[-0.02em] text-white md:text-3xl">
                   {it.t}
                 </h3>
 
                 {/* DESCRIPTION */}
-                <p className="max-w-[320px] font-light leading-relaxed text-foreground/70">
+                <p className="max-w-[320px] leading-relaxed text-white/75">
                   {it.d}
                 </p>
-
               </div>
             </Reveal>
           ))}
