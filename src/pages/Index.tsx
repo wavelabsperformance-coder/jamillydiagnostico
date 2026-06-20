@@ -10,7 +10,7 @@ import { ForWho } from "@/sections/ForWho";
 import { Transformation } from "@/sections/Transformation";
 import { Investment } from "@/sections/Investment";
 import { Testimonials } from "@/sections/Testimonials";
-import { Gallery } from "@/sections/Gallery";
+
 import { FinalCTA } from "@/sections/FinalCTA";
 import { Footer } from "@/sections/Footer";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
@@ -35,7 +35,7 @@ export default function Index() {
       <Transformation />
       <Investment />
       <Testimonials />
-      <Gallery />
+    
       <FinalCTA />
       <Footer />
       <WhatsAppFloat />
