@@ -50,16 +50,10 @@ export function HowItWorks() {
             </div>
 
             <div className="space-y-4 text-[#D8C9C1] font-light leading-relaxed max-w-md">
-              <p>
-                Um encontro individual de até{" "}
-                <span className="text-[#F4E9DF] font-medium">
-                  2h30
-                </span>.
-              </p>
+            
 
               <p>
-                Um espaço seguro para investigar aquilo que está gerando
-                confusão, estagnação, insegurança ou sobrecarga.
+                 Teremos encontros personalizados e seguro para investigar aquilo que está gerando confusão, estagnação, insegurança ou sobrecarga.
               </p>
 
               <p>
@@ -103,25 +97,15 @@ export function HowItWorks() {
             </div>
 
             <div className="space-y-4 text-[#D8C9C1] font-light leading-relaxed max-w-md">
-              <p>
-                Após a imersão, você recebe um{" "}
-                <span className="text-[#F4E9DF] font-medium">
-                  material personalizado
-                </span>{" "}
-                construído a partir de tudo que foi identificado durante o encontro.
-              </p>
+          
 
               <p>
-                Esse material é entregue em até{" "}
-                <span className="text-[#F4E9DF] font-medium">
-                  7 dias úteis
-                </span>.
+                Ao final da sua imersão, você recebe um material personalizado construído apartir de tudo que foi identificado durante o encontro. 
+
+O seu plano de ação individual organiza percepções e prioridades com o propósito de te conectar ao que voce verdadeiramente deseja.
               </p>
 
-              <p>
-                Ele organiza percepções, prioridades, direcionamentos e próximos
-                passos para sua realidade atual.
-              </p>
+            
             </div>
 
             <div className="mt-10 flex items-center gap-3 text-xs uppercase tracking-[0.25em] text-[#B67A43]">

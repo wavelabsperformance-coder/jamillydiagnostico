@@ -12,7 +12,7 @@ const testimonials = [
   },
   {
     src: "https://pub-f8b8497cd8584152a19aa731afec254d.r2.dev/depoimento-2.MP4",
-    poster: "",
+    poster: "/images/gallery-4.jpg",
     name: "Marina A.",
     role: "Consultora · São Paulo",
   },
@@ -50,7 +50,7 @@ export function Testimonials() {
 
     const cardWidth =
       window.innerWidth < 768
-        ? window.innerWidth * 0.86
+        ? window.innerWidth * 0.9
         : 340;
 
     scroller.current.scrollBy({
@@ -156,39 +156,35 @@ export function Testimonials() {
             />
           </button>
 
-         {/* LISTA */}
-<div
-  ref={scroller}
-  style={{
-    WebkitOverflowScrolling: "touch",
-    touchAction: "pan-y",
-  }}
-  className="
-    flex gap-4
-    overflow-x-auto
-    overflow-y-hidden
-    pb-4
+          {/* LISTA */}
+          <div
+            ref={scroller}
+            className="
+              flex gap-4
+              overflow-x-auto
+              overflow-y-hidden
+              pb-4
 
-    snap-x snap-mandatory
-    scroll-smooth
+              snap-x
+              snap-mandatory
 
-    touch-pan-y
+              scroll-smooth
 
-    [scrollbar-width:none]
-    [-ms-overflow-style:none]
-    [&::-webkit-scrollbar]:hidden
+              [scrollbar-width:none]
+              [-ms-overflow-style:none]
+              [&::-webkit-scrollbar]:hidden
 
-    md:gap-6
-  "
->
+              md:gap-6
+            "
+          >
             {testimonials.map((item, index) => (
               <div
-                key={item.name}
+                key={`${item.name}-${index}`}
                 className="
-                  w-[78vw]
-                  max-w-[280px]
+                  w-[85vw]
+                  max-w-[320px]
                   shrink-0
-                  snap-start
+                  snap-center
 
                   md:w-[320px]
                   md:max-w-[320px]
