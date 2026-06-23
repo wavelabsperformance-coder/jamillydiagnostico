@@ -5,7 +5,7 @@ import { waLink } from "@/lib/site";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-wine-deep">
+    <section className="relative min-h-screen overflow-hidden bg-black">
       <Nav />
 
       {/* Background image */}
@@ -15,8 +15,12 @@ export function Hero() {
           alt="Mulher em momento contemplativo de clareza interior"
           className="w-full h-full object-cover object-[center_15%] scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-wine-deep/85 via-wine-deep/55 to-wine-deep/20" />
-        <div className="absolute inset-0 bg-gradient-to-t from-wine-deep via-transparent to-transparent" />
+
+        {/* Fumaça preta lateral */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/65 to-black/25" />
+
+        {/* Fumaça preta inferior */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
       </div>
 
       {/* Content */}
@@ -26,20 +30,34 @@ export function Hero() {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.2, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
+              transition={{
+                duration: 1.2,
+                delay: 0.4,
+                ease: [0.22, 1, 0.36, 1],
+              }}
               className="flex items-center gap-4 mb-8"
             >
               <span className="w-12 h-px bg-accent" />
-              <span className="eyebrow text-accent">Imersão que Transforma</span>
+              <span className="eyebrow text-accent">
+                Imersão que Transforma
+              </span>
             </motion.div>
 
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.4, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
+              transition={{
+                duration: 1.4,
+                delay: 0.6,
+                ease: [0.22, 1, 0.36, 1],
+              }}
               className="serif-display text-background text-[2.4rem] sm:text-5xl md:text-6xl lg:text-[4.5rem] leading-[1.02] mb-8"
             >
-              Clareza para enxergar o que está <em className="not-italic text-accent/95">travando sua vida, </em> suas decisões e seus próximos passos.
+              Clareza para enxergar o que está{" "}
+              <em className="not-italic text-accent/95">
+                travando sua vida,
+              </em>{" "}
+              suas decisões e seus próximos passos.
             </motion.h1>
 
             <motion.div
@@ -49,10 +67,10 @@ export function Hero() {
               className="max-w-xl space-y-5 mb-10"
             >
               <p className="text-background/85 text-base md:text-lg leading-relaxed font-light">
-               Uma experiência individual e personalizada para mulheres que sentem que chegou a hora de organizar pensamentos, emoções, estratégias e criar direção para o próximo nível da sua vida.
-
+                Uma experiência individual e personalizada para mulheres que
+                sentem que chegou a hora de organizar pensamentos, emoções,
+                estratégias e criar direção para o próximo nível da sua vida.
               </p>
-             
             </motion.div>
 
             <motion.div
@@ -60,16 +78,17 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 1.4 }}
             >
-             <CTAButton href={waLink()} variant="primary">
-  QUERO AGENDAR MINHA IMERSÃO
-</CTAButton>
+              <CTAButton href={waLink()} variant="primary">
+                QUERO AGENDAR MINHA IMERSÃO
+              </CTAButton>
+
               <p className="mt-5 text-[11px] tracking-[0.25em] uppercase text-background/55">
-  Atendimento presencial e online
-  <span className="mx-2 text-accent">·</span>
-  Processo individual
-  <span className="mx-2 text-accent">·</span>
-  Vagas limitadas
-</p>
+                Atendimento presencial e online
+                <span className="mx-2 text-accent">·</span>
+                Processo individual
+                <span className="mx-2 text-accent">·</span>
+                Vagas limitadas
+              </p>
             </motion.div>
           </div>
 
@@ -83,6 +102,7 @@ export function Hero() {
               <p className="font-serif italic text-background/70 text-sm max-w-[220px] text-right leading-snug">
                 "Quando existe clareza, o próximo passo finalmente aparece."
               </p>
+
               <span className="text-[10px] tracking-[0.35em] uppercase text-accent">
                 — Jamilly Pacheco
               </span>
@@ -91,7 +111,7 @@ export function Hero() {
         </div>
       </div>
 
-      {/* subtle scroll cue */}
+      {/* Scroll */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

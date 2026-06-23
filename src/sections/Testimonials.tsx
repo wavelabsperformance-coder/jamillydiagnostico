@@ -6,38 +6,38 @@ import { useRef } from "react";
 const testimonials = [
   {
     src: "https://pub-f8b8497cd8584152a19aa731afec254d.r2.dev/depoimento-1.MP4",
-    poster: "/images/gallery-2.jpg",
-    name: "Camila R.",
-    role: "Empresária · Vale do Paraíba",
+    poster: "",
+    name: "Iasmin Dantas",
+    role: "Empresária na área da fisioterapia",
   },
   {
     src: "https://pub-f8b8497cd8584152a19aa731afec254d.r2.dev/depoimento-2.MP4",
-    poster: "/images/gallery-4.jpg",
+    poster: "",
     name: "Marina A.",
     role: "Consultora · São Paulo",
   },
   {
     src: "https://pub-f8b8497cd8584152a19aa731afec254d.r2.dev/depoimento-3.MP4",
-    poster: "/images/gallery-5.jpg",
-    name: "Juliana M.",
-    role: "Psicóloga · Campinas",
+    poster: "",
+    name: "Comunidade empower",
+    role: "Club",
   },
   {
     src: "https://pub-f8b8497cd8584152a19aa731afec254d.r2.dev/depoimento-4.MP4",
-    poster: "/images/gallery-6.jpg",
-    name: "Renata S.",
-    role: "Empreendedora · Curitiba",
+    poster: "",
+    name: "Comunidade empower",
+    role: "Club",
   },
   {
     src: "https://pub-f8b8497cd8584152a19aa731afec254d.r2.dev/depoimento-5.MP4",
-    poster: "/images/gallery-7.jpg",
+    poster: "",
     name: "Fernanda L.",
     role: "Mentora · Rio de Janeiro",
   },
   {
     src: "https://pub-f8b8497cd8584152a19aa731afec254d.r2.dev/depoimento-6.MP4",
-    poster: "/images/gallery-8.jpg",
-    name: "Patrícia A.",
+    poster: "",
+    name: "Débora Amaral.",
     role: "Arquiteta · Belo Horizonte",
   },
 ];
@@ -156,22 +156,31 @@ export function Testimonials() {
             />
           </button>
 
-          {/* LISTA */}
-          <div
-            ref={scroller}
-            className="
-              flex gap-4 overflow-x-auto pb-4
+         {/* LISTA */}
+<div
+  ref={scroller}
+  style={{
+    WebkitOverflowScrolling: "touch",
+    touchAction: "pan-y",
+  }}
+  className="
+    flex gap-4
+    overflow-x-auto
+    overflow-y-hidden
+    pb-4
 
-              snap-x snap-mandatory
-              scroll-smooth
+    snap-x snap-mandatory
+    scroll-smooth
 
-              [scrollbar-width:none]
-              [-ms-overflow-style:none]
-              [&::-webkit-scrollbar]:hidden
+    touch-pan-y
 
-              md:gap-6
-            "
-          >
+    [scrollbar-width:none]
+    [-ms-overflow-style:none]
+    [&::-webkit-scrollbar]:hidden
+
+    md:gap-6
+  "
+>
             {testimonials.map((item, index) => (
               <div
                 key={item.name}
