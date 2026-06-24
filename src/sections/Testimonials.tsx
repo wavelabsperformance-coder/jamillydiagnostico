@@ -60,7 +60,10 @@ export function Testimonials() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-background py-20 md:py-40">
+    <section
+  id="depoimentos"
+  className="relative overflow-hidden bg-background py-20 md:py-40"
+>
       <div className="mx-auto max-w-[1450px] px-5 md:px-10">
 
         {/* HEADER */}

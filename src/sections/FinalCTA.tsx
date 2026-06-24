@@ -4,7 +4,9 @@ import { waLink } from "@/lib/site";
 
 export function FinalCTA() {
   return (
-    <section className="relative bg-[#260404] text-background overflow-hidden">
+    <section 
+      id="agendar"
+    className="relative bg-[#260404] text-background overflow-hidden">
       <div className="absolute inset-0 opacity-20">
         <img
           src="/images/cta.jpg"

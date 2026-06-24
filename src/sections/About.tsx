@@ -2,7 +2,10 @@ import { Reveal } from "@/components/Reveal";
 
 export function About() {
   return (
-    <section className="relative bg-background py-24 md:py-30">
+    <section
+  id="sobre"
+  className="relative bg-background py-24 md:py-30"
+>
       <div className="mx-auto max-w-[1400px] px-6 md:px-12 grid md:grid-cols-12 gap-12 items-center">
         <div className="md:col-span-6">
           <Reveal>

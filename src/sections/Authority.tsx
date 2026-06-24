@@ -2,7 +2,10 @@ import { Reveal } from "@/components/Reveal";
 
 export function Authority() {
   return (
-    <section className="relative overflow-hidden bg-wine-deep py-24 text-background md:py-20">
+    <section
+  id="especialista"
+  className="relative overflow-hidden bg-wine-deep py-24 text-background md:py-20"
+>
       <div className="mx-auto grid max-w-[1400px] items-center gap-12 px-6 md:grid-cols-12 md:gap-20 md:px-12">
 
         {/* FOTO */}

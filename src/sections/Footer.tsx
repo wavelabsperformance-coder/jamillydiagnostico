@@ -64,11 +64,8 @@ export function Footer() {
               <li><Link to="/termos-de-uso" className="hover:text-accent transition-colors">Termos de Uso</Link></li>
               <li><Link to="/lgpd" className="hover:text-accent transition-colors">LGPD</Link></li>
             </ul>
-            <p className="mt-6 text-xs text-background/55 font-light">
-              {SITE.legalName}
-              <br />
-              CNPJ: {SITE.cnpj}
-            </p>
+           
+             
           </div>
         </div>
 

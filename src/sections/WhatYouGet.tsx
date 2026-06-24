@@ -35,7 +35,9 @@ const items = [
 
 export function WhatYouGet() {
   return (
-    <section className="relative overflow-hidden bg-background py-24 md:py-20">
+    <section  
+    id="beneficios"
+    className="relative overflow-hidden bg-background py-24 md:py-20">
       {/* SOFT BACKGROUND GLOW */}
       <div className="pointer-events-none absolute inset-0 opacity-40">
         <div className="absolute left-1/2 top-0 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-[#2A120D]/10 blur-[140px]" />

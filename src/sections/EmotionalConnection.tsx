@@ -21,7 +21,10 @@ export function EmotionalConnection() {
   }, []);
 
   return (
-    <section className="relative overflow-hidden bg-background py-10 lg:py-20">
+    <section
+  id="conexao-emocional"
+  className="relative overflow-hidden bg-background py-10 lg:py-20"
+>
       <div className="mx-auto max-w-[1450px] px-6 lg:px-10">
        <div className="grid items-center gap-12 text-center lg:text-left lg:grid-cols-[1fr_620px_1fr]">
 

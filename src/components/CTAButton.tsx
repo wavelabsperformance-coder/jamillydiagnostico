@@ -13,7 +13,7 @@ export function CTAButton({
   className?: string;
 }) {
   const base =
-    "group inline-flex items-center justify-between gap-6 text-[11px] tracking-[0.3em] uppercase font-medium transition-all duration-300 px-8 py-5 md:px-10 md:py-6 no-underline";
+    "group inline-flex items-center justify-center gap-4 whitespace-nowrap text-[11px] tracking-[0.25em] uppercase font-medium transition-all duration-300 px-6 py-5 md:px-10 md:py-6 no-underline";
 
   const styles =
     variant === "primary"
@@ -29,9 +29,21 @@ export function CTAButton({
       rel="noreferrer"
       className={`${base} ${styles} ${className}`}
     >
-      <span>{children}</span>
+      <span className="whitespace-nowrap">
+        {children}
+      </span>
 
-      <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+      <ArrowUpRight
+        className="
+          w-4
+          h-4
+          shrink-0
+          transition-transform
+          duration-300
+          group-hover:translate-x-1
+          group-hover:-translate-y-1
+        "
+      />
     </a>
   );
 }

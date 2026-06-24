@@ -15,7 +15,10 @@ const notForYou = [
 
 export function ForWho() {
   return (
-    <section className="relative bg-background py-24 md:py-20">
+   <section
+  id="paraquem"
+  className="relative bg-background py-24 md:py-20"
+>
       <div className="mx-auto max-w-[1400px] px-6 md:px-12">
         
         {/* TOPO */}
