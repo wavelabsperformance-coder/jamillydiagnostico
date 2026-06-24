@@ -2,7 +2,7 @@ import { Reveal } from "@/components/Reveal";
 
 export function Authority() {
   return (
-    <section
+   <section
   id="especialista"
   className="relative overflow-hidden bg-wine-deep py-24 text-background md:py-20"
 >

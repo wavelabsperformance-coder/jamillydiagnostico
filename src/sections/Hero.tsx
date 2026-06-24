@@ -6,9 +6,9 @@ import { waLink } from "@/lib/site";
 export function Hero() {
   return (
     <section
-  id="inicio"
-  className="relative min-h-screen overflow-hidden bg-black"
->
+      id="inicio"
+      className="relative min-h-screen overflow-hidden bg-black"
+    >
       <Nav />
 
       {/* Background image */}
@@ -26,12 +26,13 @@ export function Hero() {
           "
         />
 
-        {/* Fumaça preta lateral */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/65 to-black/25" />
+        {/* Contraste lateral para leitura */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/45 via-black/20 to-transparent" />
 
-        {/* Fumaça preta inferior */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+        {/* Contraste inferior */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/20 to-transparent" />
       </div>
+
 
       {/* Content */}
       <div
@@ -50,8 +51,10 @@ export function Hero() {
       >
         <div className="mx-auto max-w-[1400px] w-full px-6 md:px-12 grid md:grid-cols-12 gap-8 md:gap-16">
 
+
           {/* LEFT */}
           <div className="md:col-span-7 lg:col-span-7 mt-36 md:mt-0">
+
 
             {/* Eyebrow */}
             <motion.div
@@ -64,12 +67,16 @@ export function Hero() {
               }}
               className="flex items-center gap-3 mb-5 md:mb-8"
             >
-              <span className="w-12 h-px bg-accent" />
 
-              <span className="eyebrow text-accent">
+              <span className="w-12 h-px bg-[#000000]" />
+
+              <span className="eyebrow text-[#000000]">
                 Imersão que Transforma
               </span>
+
             </motion.div>
+
+
 
             {/* Título */}
             <motion.h1
@@ -93,12 +100,18 @@ export function Hero() {
                 md:mb-8
               "
             >
+
               Clareza para enxergar o que está{" "}
-              <em className="not-italic text-accent/95">
+
+              <em className="not-italic text-[#000000]">
                 travando sua vida,
               </em>{" "}
+
               suas decisões e seus próximos passos.
+
             </motion.h1>
+
+
 
             {/* Descrição */}
             <motion.div
@@ -107,20 +120,26 @@ export function Hero() {
               transition={{ duration: 1, delay: 1.1 }}
               className="max-w-xl space-y-5 mb-8 md:mb-10"
             >
+
               <p
                 className="
-                  text-background/85
+                  text-background/90
                   text-[1rem]
                   md:text-lg
                   leading-[1.8]
                   font-light
                 "
               >
+
                 Uma experiência individual e personalizada para mulheres que
                 sentem que chegou a hora de organizar pensamentos, emoções,
                 estratégias e criar direção para o próximo nível da sua vida.
+
               </p>
+
             </motion.div>
+
+
 
             {/* CTA */}
             <motion.div
@@ -128,6 +147,7 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 1.4 }}
             >
+
               <CTAButton
                 href={waLink()}
                 variant="primary"
@@ -139,8 +159,12 @@ export function Hero() {
                   tracking-[0.12em]
                 "
               >
+
                 QUERO AGENDAR MINHA IMERSÃO
+
               </CTAButton>
+
+
 
               <p
                 className="
@@ -150,18 +174,34 @@ export function Hero() {
                   tracking-[0.12em]
                   md:tracking-[0.25em]
                   uppercase
-                  text-background/55
+                  text-background/70
                 "
               >
+
                 Atendimento presencial e online
-                <span className="mx-2 text-accent">·</span>
+
+                <span className="mx-2 text-[#8B5A2B]">
+                  ·
+                </span>
+
                 Processo individual
-                <span className="mx-2 text-accent">·</span>
+
+                <span className="mx-2 text-[#8B5A2B]">
+                  ·
+                </span>
+
                 Vagas limitadas
+
               </p>
+
+
             </motion.div>
 
+
           </div>
+
+
+
 
           {/* RIGHT */}
           <motion.div
@@ -177,19 +217,32 @@ export function Hero() {
               justify-end
             "
           >
+
             <div className="flex flex-col items-end gap-3">
-              <p className="font-serif italic text-background/70 text-sm max-w-[220px] text-right leading-snug">
+
+              <p className="font-serif italic text-background/80 text-sm max-w-[220px] text-right leading-snug">
+
                 "Quando existe clareza, o próximo passo finalmente aparece."
+
               </p>
 
-              <span className="text-[10px] tracking-[0.35em] uppercase text-accent">
+
+              <span className="text-[10px] tracking-[0.35em] uppercase text-[#8B5A2B]">
+
                 — Jamilly Pacheco
+
               </span>
+
+
             </div>
+
           </motion.div>
+
 
         </div>
       </div>
+
+
 
       {/* Scroll */}
       <motion.div
@@ -203,14 +256,18 @@ export function Hero() {
           bottom-6
           left-1/2
           -translate-x-1/2
-          text-background/40
+          text-background/50
           text-[10px]
           tracking-[0.4em]
           uppercase
         "
       >
+
         scroll
+
       </motion.div>
+
+
     </section>
   );
 }

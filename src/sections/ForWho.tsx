@@ -15,7 +15,7 @@ const notForYou = [
 
 export function ForWho() {
   return (
-   <section
+ <section
   id="paraquem"
   className="relative bg-background py-24 md:py-20"
 >

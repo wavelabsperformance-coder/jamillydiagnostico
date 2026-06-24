@@ -2,9 +2,10 @@ import { Reveal } from "@/components/Reveal";
 
 export function BeliefBreak() {
   return (
-    <section 
-    id="clareza"
-    className="relative overflow-hidden bg-foreground py-20 text-background md:py-20">
+<section
+  id="quebra-de-padroes"
+  className="relative overflow-hidden bg-foreground py-20 text-background md:py-20"
+>
       <div className="absolute inset-0 opacity-[0.07]">
         <div className="absolute -top-32 -left-32 h-[500px] w-[500px] rounded-full bg-accent blur-3xl" />
         <div className="absolute bottom-0 right-0 h-[600px] w-[600px] rounded-full bg-wine blur-3xl" />

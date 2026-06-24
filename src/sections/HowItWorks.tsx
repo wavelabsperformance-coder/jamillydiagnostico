@@ -2,10 +2,10 @@ import { Reveal } from "@/components/Reveal";
 
 export function HowItWorks() {
   return (
-    <section
-    id="processo"
-     className="relative overflow-hidden bg-[#1D0B06] py-15 md:py-20"
-     >
+   <section
+  id="processo"
+  className="relative overflow-hidden bg-[#1D0B06] py-15 md:py-20"
+>
 
       <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_center,_rgba(120,55,20,0.18),transparent_70%)]" />
 

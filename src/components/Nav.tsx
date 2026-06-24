@@ -1,36 +1,59 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { waLink } from "@/lib/site";
 
 export function Nav() {
-  const [menuOpen, setMenuOpen] = useState(false);
+ const [menuOpen, setMenuOpen] = useState(false);
+const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+const closeMenus = () => {
+  setMenuOpen(false);
+  setMobileMenuOpen(false);
+};
 
   return (
     <motion.header
       initial={{ opacity: 0, y: -10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.2 }}
-      className="absolute top-0 left-0 right-0 z-50"
+      className="
+fixed
+top-0
+left-0
+right-0
+z-50
+bg-black/20
+backdrop-blur-md
+border-b
+border-white/10
+"
     >
       <div className="mx-auto max-w-[1400px] px-6 md:px-12 py-6 md:py-8 flex items-center justify-between">
 
         {/* Logo */}
-        <Link to="/" className="flex items-baseline gap-2 group">
-          <span className="font-serif text-xl md:text-2xl text-background tracking-tight">
-            Jamilly Pacheco
-          </span>
+     <a href="#inicio" className="flex items-baseline gap-2 group cursor-pointer">
+  <span className="font-serif text-xl md:text-2xl text-background tracking-tight">
+    Jamilly Pacheco
+  </span>
 
-          <span className="hidden xl:inline text-[10px] tracking-[0.3em] uppercase text-background/60">
-            Estratégia
-          </span>
-        </Link>
+  <span className="hidden xl:inline text-[10px] tracking-[0.3em] uppercase text-background/60">
+    Estratégia
+  </span>
+</a>
 
-        {/* Área Direita */}
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-4">
 
-          {/* Dropdown */}
+          {/* Menu Mobile */}
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="lg:hidden text-background"
+          >
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+
+          {/* Dropdown Desktop */}
           <div className="relative hidden lg:block">
 
             <button
@@ -62,87 +85,101 @@ export function Nav() {
                   right-0
                   mt-4
                   w-[280px]
-
                   rounded-[24px]
                   border border-white/10
-
                   bg-black/85
                   backdrop-blur-xl
-
                   p-3
-
                   shadow-[0_20px_60px_rgba(0,0,0,0.35)]
                 "
               >
-                <a
-                  href="#sobre"
-                  className="block rounded-xl px-4 py-3 text-sm text-background/85 hover:bg-white/5 hover:text-white transition"
-                >
-                  Sobre
-                </a>
+               <a
+  href="#sobre"
+  onClick={closeMenus}
+  className="block rounded-xl px-4 py-3 text-sm text-background/85 hover:bg-white/5 hover:text-white transition"
+>
+  Sobre
+</a>
 
-                <a
-                  href="#conexao-emocional"
-                  className="block rounded-xl px-4 py-3 text-sm text-background/85 hover:bg-white/5 hover:text-white transition"
-                >
-                  Clareza Emocional
-                </a>
+<a
+  href="#conexao-emocional"
+  onClick={closeMenus}
+  className="block rounded-xl px-4 py-3 text-sm text-background/85 hover:bg-white/5 hover:text-white transition"
+>
+  Clareza Emocional
+</a>
 
-                <a
-                  href="#quebra-de-padroes"
-                  className="block rounded-xl px-4 py-3 text-sm text-background/85 hover:bg-white/5 hover:text-white transition"
-                >
-                  Quebra de Padrões
-                </a>
+<a
+  href="#quebra-de-padroes"
+  onClick={closeMenus}
+  className="block rounded-xl px-4 py-3 text-sm text-background/85 hover:bg-white/5 hover:text-white transition"
+>
+  Quebra de Padrões
+</a>
 
-                <a
-                  href="#transformacao"
-                  className="block rounded-xl px-4 py-3 text-sm text-background/85 hover:bg-white/5 hover:text-white transition"
-                >
-                  Transformação
-                </a>
+<a
+  href="#transformacao"
+  onClick={closeMenus}
+  className="block rounded-xl px-4 py-3 text-sm text-background/85 hover:bg-white/5 hover:text-white transition"
+>
+  Transformação
+</a>
 
-                <a
-                  href="#como-funciona"
-                  className="block rounded-xl px-4 py-3 text-sm text-background/85 hover:bg-white/5 hover:text-white transition"
-                >
-                  Como Funciona
-                </a>
+<a
+  href="#especialista"
+  onClick={closeMenus}
+  className="block rounded-xl px-4 py-3 text-sm text-background/85 hover:bg-white/5 hover:text-white transition"
+>
+  A Especialista
+</a>
 
-                <a
-                  href="#o-que-recebe"
-                  className="block rounded-xl px-4 py-3 text-sm text-background/85 hover:bg-white/5 hover:text-white transition"
-                >
-                  O Que Você Recebe
-                </a>
+<a
+  href="#processo"
+  onClick={closeMenus}
+  className="block rounded-xl px-4 py-3 text-sm text-background/85 hover:bg-white/5 hover:text-white transition"
+>
+  Como Funciona
+</a>
 
-                <a
-                  href="#para-quem-e"
-                  className="block rounded-xl px-4 py-3 text-sm text-background/85 hover:bg-white/5 hover:text-white transition"
-                >
-                  Para Quem É
-                </a>
+<a
+  href="#o-que-recebe"
+  onClick={closeMenus}
+  className="block rounded-xl px-4 py-3 text-sm text-background/85 hover:bg-white/5 hover:text-white transition"
+>
+  O Que Você Recebe
+</a>
 
-                <a
-                  href="#investimento"
-                  className="block rounded-xl px-4 py-3 text-sm text-background/85 hover:bg-white/5 hover:text-white transition"
-                >
-                  Investimento
-                </a>
+<a
+  href="#paraquem"
+  onClick={closeMenus}
+  className="block rounded-xl px-4 py-3 text-sm text-background/85 hover:bg-white/5 hover:text-white transition"
+>
+  Para Quem É
+</a>
 
-                <a
-                  href="#depoimentos"
-                  className="block rounded-xl px-4 py-3 text-sm text-background/85 hover:bg-white/5 hover:text-white transition"
-                >
-                  Depoimentos
-                </a>
+<a
+  href="#investimento"
+  onClick={closeMenus}
+  className="block rounded-xl px-4 py-3 text-sm text-background/85 hover:bg-white/5 hover:text-white transition"
+>
+  Investimento
+</a>
 
-                <a
-                  href="#agendar"
-                  className="block rounded-xl px-4 py-3 text-sm text-background/85 hover:bg-white/5 hover:text-white transition"
-                >
-                  Agendar
-                </a>
+<a
+  href="#depoimentos"
+  onClick={closeMenus}
+  className="block rounded-xl px-4 py-3 text-sm text-background/85 hover:bg-white/5 hover:text-white transition"
+>
+  Depoimentos
+</a>
+
+<a
+  href="#agendar"
+  onClick={closeMenus}
+  className="block rounded-xl px-4 py-3 text-sm text-background/85 hover:bg-white/5 hover:text-white transition"
+>
+  Agendar
+</a>
               </div>
             )}
           </div>
@@ -170,6 +207,48 @@ export function Nav() {
 
         </div>
       </div>
+
+      {/* Menu Mobile Aberto */}
+      {mobileMenuOpen && (
+        <div
+          className="
+            lg:hidden
+            absolute
+            top-full
+            left-4
+            right-4
+            mt-2
+            rounded-[24px]
+            border border-white/10
+            bg-black/95
+            backdrop-blur-xl
+            p-3
+            shadow-[0_20px_60px_rgba(0,0,0,0.35)]
+          "
+        >
+       <a href="#sobre" onClick={closeMenus} className="block px-4 py-3 text-white/90">Sobre</a>
+
+<a href="#conexao-emocional" onClick={closeMenus} className="block px-4 py-3 text-white/90">Clareza Emocional</a>
+
+<a href="#quebra-de-padroes" onClick={closeMenus} className="block px-4 py-3 text-white/90">Quebra de Padrões</a>
+
+<a href="#transformacao" onClick={closeMenus} className="block px-4 py-3 text-white/90">Transformação</a>
+
+<a href="#especialista" onClick={closeMenus} className="block px-4 py-3 text-white/90">A Especialista</a>
+
+<a href="#processo" onClick={closeMenus} className="block px-4 py-3 text-white/90">Como Funciona</a>
+
+<a href="#o-que-recebe" onClick={closeMenus} className="block px-4 py-3 text-white/90">O Que Você Recebe</a>
+
+<a href="#paraquem" onClick={closeMenus} className="block px-4 py-3 text-white/90">Para Quem É</a>
+
+<a href="#investimento" onClick={closeMenus} className="block px-4 py-3 text-white/90">Investimento</a>
+
+<a href="#depoimentos" onClick={closeMenus} className="block px-4 py-3 text-white/90">Depoimentos</a>
+
+<a href="#agendar" onClick={closeMenus} className="block px-4 py-3 text-white/90">Agendar</a>
+        </div>
+      )}
     </motion.header>
   );
 }
