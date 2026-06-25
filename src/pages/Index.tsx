@@ -18,7 +18,7 @@ import { CookieBanner } from "@/components/CookieBanner";
 
 export default function Index() {
   useMeta({
-    title: "Diagnóstico Estratégico — Jamilly Pacheco",
+    title: "Imersão que Transforma - Jamilly Pacheco",
     description: "Processo estratégico individual conduzido por Jamilly Pacheco para identificar bloqueios e revelar o caminho mais inteligente para sua próxima fase.",
     canonical: "/",
   });

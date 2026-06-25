@@ -33,14 +33,12 @@ border-white/10
       <div className="mx-auto max-w-[1400px] px-6 md:px-12 py-6 md:py-8 flex items-center justify-between">
 
         {/* Logo */}
-     <a href="#inicio" className="flex items-baseline gap-2 group cursor-pointer">
-  <span className="font-serif text-xl md:text-2xl text-background tracking-tight">
-    Jamilly Pacheco
-  </span>
-
-  <span className="hidden xl:inline text-[10px] tracking-[0.3em] uppercase text-background/60">
-    Estratégia
-  </span>
+   <a href="#inicio" className="flex items-center gap-2">
+  <img
+    src="/images/logo.png"
+    alt="Logo"
+    className="h-14 w-auto"
+  />
 </a>
 
         <div className="flex items-center gap-4">
