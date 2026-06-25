@@ -10,7 +10,7 @@ export function Footer() {
           <div className="md:col-span-5">
             <p className="font-serif text-3xl md:text-4xl text-background mb-4">Jamilly Pacheco</p>
             <p className="text-background/65 font-light leading-relaxed max-w-sm text-sm">
-              Diagnóstico Estratégico individual para mulheres que querem trocar a confusão por clareza, direção e
+              Imersão que Transforma individual para mulheres que querem trocar a confusão por clareza, direção e
               próximos passos com inteligência.
             </p>
 
