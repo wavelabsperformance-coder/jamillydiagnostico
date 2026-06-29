@@ -22,21 +22,19 @@ export function EmotionalConnection() {
 
   return (
     <section
-  id="conexao-emocional"
-  className="relative overflow-hidden bg-background py-10 lg:py-20"
->
+      id="conexao-emocional"
+      className="relative overflow-hidden bg-background py-10 lg:py-20"
+    >
       <div className="mx-auto max-w-[1450px] px-6 lg:px-10">
-       <div className="grid items-center gap-12 text-center lg:text-left lg:grid-cols-[1fr_620px_1fr]">
+        <div className="grid items-center gap-12 text-center lg:text-left lg:grid-cols-[1fr_620px_1fr]">
 
           {/* LEFT CONTENT */}
           <div className="flex self-start justify-center lg:justify-end">
             <Reveal>
               <div className="max-w-[360px] pt-4 md:pt-10 text-center lg:text-left">
 
-                {/* EYEBROW */}
-               <div className="mb-8 flex items-center justify-center gap-4 lg:justify-start">
-                  <span className="h-px w-12 bg-wine" />
-
+                {/* EYEBROW (Traço removido aqui) */}
+                <div className="mb-8 flex items-center justify-center gap-4 lg:justify-start">
                   <span className="text-[11px] uppercase tracking-[0.32em] text-wine">
                     Conexão emocional
                   </span>
@@ -44,20 +42,20 @@ export function EmotionalConnection() {
 
                 {/* TITLE */}
                 <h2 className="serif-display text-[2.7rem] leading-[0.92] tracking-[-0.045em] text-foreground md:text-[4.5rem]">
-  Você sente
-  <br />
-  que algo
-  <br />
-  precisa mudar.
-</h2>
+                  Você sente
+                  <br />
+                  que algo
+                  <br />
+                  precisa mudar.
+                </h2>
 
-<p className="mt-7 serif-display text-[1.55rem] leading-[1.08] tracking-[-0.03em] text-foreground/58 md:text-[2.5rem]">
-  Mas ainda não
-  <br />
-  consegue enxergar
-  <br />
-  exatamente o quê.
-</p>
+                <p className="mt-7 serif-display text-[1.55rem] leading-[1.08] tracking-[-0.03em] text-foreground/58 md:text-[2.5rem]">
+                  Mas ainda não
+                  <br />
+                  consegue enxergar
+                  <br />
+                  exatamente o quê.
+                </p>
 
               </div>
             </Reveal>
@@ -140,6 +138,7 @@ export function EmotionalConnection() {
                       setActiveVideo(true);
 
                       video.muted = false;
+                      video.play();
                     }}
                   />
 
@@ -151,11 +150,11 @@ export function EmotionalConnection() {
                       {/* TEXTO SOBRE VIDEO */}
                       <div className="pointer-events-none absolute inset-x-0 bottom-0 z-30 p-6 md:p-8">
 
-                       <div className="max-w-[300px] text-center md:text-left">
-                         <p className="font-serif text-[1.25rem] italic leading-snug text-white md:text-[1.5rem]">
-  “Talvez não seja falta de informação.
-  Talvez seja excesso de ruído.”
-</p>
+                        <div className="max-w-[300px] text-center md:text-left">
+                          <p className="font-serif text-[1.25rem] italic leading-snug text-white md:text-[1.5rem]">
+                            “Talvez não seja falta de informação.
+                            Talvez seja excesso de ruído.”
+                          </p>
 
                           <div className="mt-5 flex items-center justify-center gap-3 md:justify-start">
                             <span className="h-px w-8 bg-white/50" />
@@ -179,7 +178,7 @@ export function EmotionalConnection() {
           </div>
 
           {/* RIGHT CONTENT */}
-        <div className="max-w-[360px] pb-2 md:pb-8 text-center lg:text-left">
+          <div className="max-w-[360px] pb-2 md:pb-8 text-center lg:text-left">
             <Reveal delay={0.2}>
               <div className="max-w-[360px] pb-2 md:pb-8">
 
@@ -187,42 +186,42 @@ export function EmotionalConnection() {
                 <div className="mb-12 md:mb-14 border-t lg:border-t-0 lg:border-l border-border pt-6 lg:pt-0 lg:pl-6">
                   <div className="space-y-4">
 
-                   <p className="font-serif text-[1.15rem] italic text-foreground/72 md:text-[1.25rem]">
-  Você pensa.
-</p>
+                    <p className="font-serif text-[1.15rem] italic text-foreground/72 md:text-[1.25rem]">
+                      Você pensa.
+                    </p>
 
-<p className="font-serif text-[1.15rem] italic text-foreground/72 md:text-[1.25rem]">
-  Analisa.
-</p>
+                    <p className="font-serif text-[1.15rem] italic text-foreground/72 md:text-[1.25rem]">
+                      Analisa.
+                    </p>
 
-<p className="font-serif text-[1.15rem] italic text-foreground/72 md:text-[1.25rem]">
-  Busca respostas.
-</p>
+                    <p className="font-serif text-[1.15rem] italic text-foreground/72 md:text-[1.25rem]">
+                      Busca respostas.
+                    </p>
 
-<p className="font-serif text-[1.15rem] italic text-foreground/72 md:text-[1.25rem]">
-  Consome conteúdos.
-</p>
+                    <p className="font-serif text-[1.15rem] italic text-foreground/72 md:text-[1.25rem]">
+                      Consome conteúdos.
+                    </p>
 
-<p className="font-serif text-[1.15rem] italic text-foreground/72 md:text-[1.25rem]">
-  Tenta resolver sozinho.
-</p>
+                    <p className="font-serif text-[1.15rem] italic text-foreground/72 md:text-[1.25rem]">
+                      Tenta resolver sozinho.
+                    </p>
 
                   </div>
                 </div>
 
                 {/* SUPPORT TEXT */}
-             <p className="mx-auto lg:mx-0 max-w-[320px] text-[1rem] leading-[1.9] text-foreground/72 md:text-[1.08rem]">
-  Mas, mesmo assim, continua sentindo
-  que existe algo desalinhado.
-</p>
+                <p className="mx-auto lg:mx-0 max-w-[320px] text-[1rem] leading-[1.9] text-foreground/72 md:text-[1.08rem]">
+                  Mas, mesmo assim, continua sentindo
+                  que existe algo desalinhado.
+                </p>
 
                 {/* LIST */}
                 <div className="mt-12 space-y-5 md:mt-14">
                   {signs.map((sign, index) => (
-                   <div
-  key={sign}
-  className="group flex items-center justify-between border-b border-border/70 pb-5 text-left transition-all duration-300 hover:border-wine/40"
->
+                    <div
+                      key={sign}
+                      className="group flex items-center justify-between border-b border-border/70 pb-5 text-left transition-all duration-300 hover:border-wine/40"
+                    >
                       <div className="flex items-center gap-5">
 
                         <span className="text-[11px] tracking-[0.3em] text-wine">

@@ -1,22 +1,8 @@
-@import "tailwindcss" source(none);
+@import "tailwindcss";
 @source "../src";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
-
-/*
- * Design system definition.
- *
- * The @theme inline block maps CSS custom properties to Tailwind utility
- * classes (e.g. --color-primary -> bg-primary, text-primary).
- *
- * The :root and .dark blocks define the actual color values using oklch.
- * All colors MUST use oklch format.
- *
- * To add a new semantic color:
- * 1. Add the variable to :root (light value) and .dark (dark value)
- * 2. Register it in @theme inline as --color-<name>: var(--<name>)
- */
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
@@ -63,48 +49,39 @@
 
 :root {
   --radius: 0.25rem;
-
-  /* Editorial premium palette — warm cream, deep wine, muted gold, ink */
-  --background: oklch(0.965 0.012 75);       /* warm cream #F5EFE6 */
-  --foreground: oklch(0.18 0.022 40);        /* editorial ink #1A1410 */
-  --surface: oklch(0.93 0.018 70);           /* warm taupe */
-  --surface-deep: oklch(0.28 0.075 25);      /* deep burgundy #5C1F2B */
+  --background: oklch(0.965 0.012 75);       
+  --foreground: oklch(0.18 0.022 40);        
+  --surface: oklch(0.93 0.018 70);           
+  --surface-deep: oklch(0.28 0.075 25);      
   --ink: oklch(0.18 0.022 40);
   --ink-soft: oklch(0.42 0.025 40);
-
   --card: oklch(0.965 0.012 75);
   --card-foreground: oklch(0.18 0.022 40);
   --popover: oklch(0.965 0.012 75);
   --popover-foreground: oklch(0.18 0.022 40);
-
-  --primary: oklch(0.28 0.075 25);           /* burgundy */
+  --primary: oklch(0.28 0.075 25);           
   --primary-foreground: oklch(0.965 0.012 75);
   --secondary: oklch(0.93 0.018 70);
   --secondary-foreground: oklch(0.18 0.022 40);
   --muted: oklch(0.91 0.015 65);
   --muted-foreground: oklch(0.45 0.022 40);
-  --accent: oklch(0.68 0.085 70);            /* muted gold #B8945F */
+  --accent: oklch(0.68 0.085 70);            
   --accent-foreground: oklch(0.18 0.022 40);
   --destructive: oklch(0.45 0.18 25);
   --destructive-foreground: oklch(0.965 0.012 75);
   --border: oklch(0.85 0.018 60);
   --input: oklch(0.88 0.015 65);
   --ring: oklch(0.68 0.085 70);
-
   --gold: oklch(0.68 0.085 70);
   --wine: oklch(0.28 0.075 25);
   --wine-deep: oklch(0.18 0.06 25);
-
   --font-serif: "Cormorant Garamond", "Times New Roman", serif;
   --font-sans: "Inter", system-ui, sans-serif;
-
   --shadow-editorial: 0 30px 80px -20px oklch(0.18 0.06 25 / 0.25);
   --shadow-soft: 0 10px 40px -10px oklch(0.18 0.06 25 / 0.12);
-
   --gradient-warm: linear-gradient(180deg, oklch(0.965 0.012 75) 0%, oklch(0.93 0.018 70) 100%);
   --gradient-dark: linear-gradient(135deg, oklch(0.18 0.06 25) 0%, oklch(0.28 0.075 25) 100%);
   --gradient-overlay: linear-gradient(180deg, oklch(0.18 0.06 25 / 0) 0%, oklch(0.18 0.06 25 / 0.75) 100%);
-
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -200,7 +177,6 @@
   font-weight: 500;
   letter-spacing: 0.32em;
   text-transform: uppercase;
-  color: #000000;
 }
 
 .serif-display {

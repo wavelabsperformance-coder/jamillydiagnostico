@@ -3,9 +3,9 @@ import { Reveal } from "@/components/Reveal";
 export function Transformation() {
   return (
     <section
-  id="transformacao"
-  className="relative bg-foreground text-background py-28 overflow-hidden"
->
+      id="transformacao"
+      className="relative bg-foreground text-background py-28 overflow-hidden"
+    >
       <div className="absolute inset-0 opacity-20">
         <img
           src="/images/cta.jpg"
@@ -36,25 +36,15 @@ export function Transformation() {
               </span>
             </Reveal>
 
+            {/* TEXTO UNIFICADO E COM DESTAQUES EM DOURADO (text-accent) */}
             <Reveal delay={0.1}>
-              <p className="serif-display text-3xl md:text-5xl lg:text-6xl mt-8 mb-10 leading-[1.1]">
-                Você não vai sair dessa experiência com{" "}
-                <em className="not-italic text-accent">
-                  mais dúvidas
-                </em>.
+              <p className="serif-display text-3xl md:text-5xl lg:text-[3.25rem] mt-8 leading-[1.2] max-w-4xl">
+                Você não vai sair dessa experiência com mais dúvidas, e sim com{" "}
+                <span className="text-accent">clareza</span>,{" "}
+                <span className="text-accent">direção</span> e com a{" "}
+                <span className="text-accent">confiança</span> necessária para seguir um
+                caminho mais alinhado com a vida que deseja construir.
               </p>
-            </Reveal>
-
-            <Reveal delay={0.25}>
-              <div className="space-y-4 font-serif italic text-2xl md:text-3xl text-background/95">
-                <p>Vai sair com clareza.</p>
-                <p className="text-accent">Com direção.</p>
-
-                <p className="max-w-2xl text-lg md:text-xl leading-relaxed text-background/80 not-italic mt-8">
-                  E com a confiança necessária para seguir um caminho
-                  mais alinhado com a vida que deseja construir.
-                </p>
-              </div>
             </Reveal>
           </div>
 
