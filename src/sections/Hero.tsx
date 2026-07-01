@@ -53,7 +53,8 @@ export function Hero() {
 
 
           {/* LEFT */}
-          <div className="md:col-span-7 lg:col-span-7 mt-36 md:mt-0">
+          {/* ALTERAÇÃO: Adicionado 'max-w-xl' ou 'lg:max-w-2xl' para encurtar a caixa de texto no desktop e tirar o texto de cima do rosto */}
+          <div className="md:col-span-7 lg:col-span-7 mt-36 md:mt-0 max-w-xl lg:max-w-[620px]">
 
 
             {/* Eyebrow */}
@@ -92,10 +93,10 @@ export function Hero() {
                 text-background
                 text-[1.85rem]
                 sm:text-5xl
-                md:text-6xl
-                lg:text-[4.5rem]
-                leading-[1.08]
-                md:leading-[1.02]
+                md:text-5xl
+                lg:text-[3.8rem]
+                leading-[1.1]
+                md:leading-[1.05]
                 mb-6
                 md:mb-8
               "
@@ -153,6 +154,8 @@ export function Hero() {
                 variant="primary"
                 className="
                   w-full
+                  md:w-auto
+                  md:px-10
                   justify-center
                   text-[10px]
                   md:text-sm
