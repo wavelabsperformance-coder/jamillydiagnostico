@@ -14,23 +14,23 @@ export function Hero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <img
-          src="/images/hero.jpeg"
+          src="/images/hero.jpg"
           alt="Mulher em momento contemplativo de clareza interior"
           className="
             w-full
             h-full
             object-cover
             object-[68%_top]
-            md:object-[center_15%]
-            scale-105
+            md:object-[92%_15%]
+            scale-100
           "
         />
 
-        {/* Contraste lateral para leitura */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/45 via-black/20 to-transparent" />
+        {/* CORREÇÃO: Gradiente lateral e mobile intensificado para dar contraste real sob as letras */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/40 lg:from-black/60 to-transparent" />
 
-        {/* Contraste inferior */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/20 to-transparent" />
+        {/* CORREÇÃO: Gradiente inferior que protege o bloco de textos no mobile */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 lg:from-black/55 to-transparent" />
       </div>
 
 
@@ -53,7 +53,6 @@ export function Hero() {
 
 
           {/* LEFT */}
-          {/* ALTERAÇÃO: Adicionado 'max-w-xl' ou 'lg:max-w-2xl' para encurtar a caixa de texto no desktop e tirar o texto de cima do rosto */}
           <div className="md:col-span-7 lg:col-span-7 mt-36 md:mt-0 max-w-xl lg:max-w-[620px]">
 
 
@@ -69,9 +68,11 @@ export function Hero() {
               className="flex items-center gap-3 mb-5 md:mb-8"
             >
 
-              <span className="w-12 h-px bg-[#000000]" />
+              {/* CORREÇÃO: Linha mudada de preto para dourado visível */}
+              <span className="w-12 h-px bg-[#C5A880]" />
 
-              <span className="eyebrow text-[#000000]">
+              {/* CORREÇÃO: Texto do eyebrow mudado de preto para dourado visível */}
+              <span className="eyebrow text-[#C5A880] tracking-[0.15em] uppercase text-xs font-medium">
                 Imersão que Transforma
               </span>
 
@@ -90,21 +91,23 @@ export function Hero() {
               }}
               className="
                 serif-display
-                text-background
-                text-[1.85rem]
+                text-white
+                text-[1.95rem]
                 sm:text-5xl
                 md:text-5xl
                 lg:text-[3.8rem]
-                leading-[1.1]
+                leading-[1.12]
                 md:leading-[1.05]
                 mb-6
                 md:mb-8
+                drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]
               "
             >
 
               Clareza para enxergar o que está{" "}
 
-              <em className="not-italic text-[#000000]">
+              {/* CORREÇÃO: O trecho que estava em preto sumindo agora ganha um destaque champanhe suave */}
+              <em className="not-italic text-[#EAD7C3] font-medium">
                 travando sua vida,
               </em>{" "}
 
@@ -124,11 +127,12 @@ export function Hero() {
 
               <p
                 className="
-                  text-background/90
+                  text-zinc-200
                   text-[1rem]
                   md:text-lg
-                  leading-[1.8]
+                  leading-[1.7]
                   font-light
+                  drop-shadow-[0_1px_4px_rgba(0,0,0,0.4)]
                 "
               >
 
@@ -157,9 +161,10 @@ export function Hero() {
                   md:w-auto
                   md:px-10
                   justify-center
-                  text-[10px]
+                  text-[11px]
                   md:text-sm
                   tracking-[0.12em]
+                  font-semibold
                 "
               >
 
@@ -177,7 +182,7 @@ export function Hero() {
                   tracking-[0.12em]
                   md:tracking-[0.25em]
                   uppercase
-                  text-background/70
+                  text-zinc-400
                 "
               >
 
@@ -223,14 +228,14 @@ export function Hero() {
 
             <div className="flex flex-col items-end gap-3">
 
-              <p className="font-serif italic text-background/80 text-sm max-w-[220px] text-right leading-snug">
+              <p className="font-serif italic text-white/80 text-sm max-w-[220px] text-right leading-snug">
 
                 "Quando existe clareza, o próximo passo finalmente aparece."
 
               </p>
 
 
-              <span className="text-[10px] tracking-[0.35em] uppercase text-[#8B5A2B]">
+              <span className="text-[10px] tracking-[0.35em] uppercase text-[#C5A880]">
 
                 — Jamilly Pacheco
 
@@ -259,7 +264,7 @@ export function Hero() {
           bottom-6
           left-1/2
           -translate-x-1/2
-          text-background/50
+          text-white/40
           text-[10px]
           tracking-[0.4em]
           uppercase
