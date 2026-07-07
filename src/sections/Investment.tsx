@@ -6,19 +6,15 @@ export function Investment() {
   return (
 <section
   id="investimento"
-  className="relative overflow-hidden bg-[#260404] py-32 md:py-40"
+  className="relative overflow-hidden bg-[#260404] py-32 md:py-30"
 >
       {/* Glow de fundo */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#4A0A0A]/40 blur-[140px]" />
+        <div className="absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#4A0A0A]/40 blur-[140px]" />
       </div>
 
       <div className="relative mx-auto max-w-4xl px-6 md:px-12 text-center">
-        <Reveal>
-          <span className="eyebrow text-[#C6A86A]">
-            Investimento
-          </span>
-        </Reveal>
+     
 
         <Reveal delay={0.1}>
           <h2 className="serif-display mt-10 text-[#F8F2EB] text-3xl md:text-5xl lg:text-6xl leading-[1.1]">
@@ -32,23 +28,7 @@ export function Investment() {
           </p>
         </Reveal>
 
-        <Reveal delay={0.2}>
-          <div className="mt-20">
-            <div className="mx-auto h-px w-24 bg-[#C6A86A]/60" />
-
-            <div className="mt-10 flex items-start justify-center">
-              <span className="font-serif text-[#F8F2EB]/80 text-3xl md:text-4xl mt-5 mr-2">
-                R$
-              </span>
-
-              <span className="font-serif text-[#F8F2EB] text-[7rem] md:text-[10rem] leading-none">
-                600
-              </span>
-            </div>
-
-            <div className="mx-auto mt-10 h-px w-24 bg-[#C6A86A]/60" />
-          </div>
-        </Reveal>
+     
 
        <Reveal delay={0.25}>
   <div className="mt-16 max-w-3xl mx-auto">
@@ -70,7 +50,7 @@ export function Investment() {
         </p>
 
         <p className="mt-3 text-[#F8F2EB] text-lg">
-          Presencial ou Online
+          Presencial
         </p>
       </div>
 
