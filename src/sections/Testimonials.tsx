@@ -10,11 +10,40 @@ const testimonials = [
     name: "Iasmin Dantas",
     role: "Empresária na área da fisioterapia",
   },
+
+  {
+    src: "https://pub-f8b8497cd8584152a19aa731afec254d.r2.dev/depoimento-5.mp4",
+    poster: "",
+    name: "Débora Amaral",
+    role: "Empresária na Área da beleza",
+  },
+
+ {
+    src: "https://pub-f8b8497cd8584152a19aa731afec254d.r2.dev/depoimento-8.MP4",
+    poster: "",
+    name: "Comunidade empower",
+    role: "Club",
+  },
+
+  {
+    src: "https://pub-f8b8497cd8584152a19aa731afec254d.r2.dev/depoimento-9.MP4",
+    poster: "",
+    name: "Comunidade empower",
+    role: "Club",
+  },
+
+  {
+    src: "https://pub-f8b8497cd8584152a19aa731afec254d.r2.dev/depoimento-7.MP4",
+    poster: "",
+    name: "Débora Amaral",
+    role: "Empresária na Área da beleza",
+  },
+
   {
     src: "https://pub-f8b8497cd8584152a19aa731afec254d.r2.dev/depoimento-2.MP4",
     poster: "/images/gallery-4.jpg",
-    name: "Marina A.",
-    role: "Consultora · São Paulo",
+    name: "Iasmin Dantas",
+    role: "Empresária na área da fisioterapia",
   },
   {
     src: "https://pub-f8b8497cd8584152a19aa731afec254d.r2.dev/depoimento-3.MP4",
@@ -28,17 +57,12 @@ const testimonials = [
     name: "Comunidade empower",
     role: "Club",
   },
+  
   {
-    src: "https://pub-f8b8497cd8584152a19aa731afec254d.r2.dev/depoimento-5.MP4",
+    src: "https://pub-f8b8497cd8584152a19aa731afec254d.r2.dev/depoimento-6.mp4",
     poster: "",
-    name: "Fernanda L.",
-    role: "Mentora · Rio de Janeiro",
-  },
-  {
-    src: "https://pub-f8b8497cd8584152a19aa731afec254d.r2.dev/depoimento-6.MP4",
-    poster: "",
-    name: "Débora Amaral.",
-    role: "Arquiteta · Belo Horizonte",
+    name: "Iasmin Dantas",
+    role: "Empresária na área da fisioterapia",
   },
 ];
 
