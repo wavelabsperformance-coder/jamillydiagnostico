@@ -30,15 +30,15 @@ border-b
 border-white/10
 "
     >
-      <div className="mx-auto max-w-[1400px] px-6 md:px-12 py-6 md:py-8 flex items-center justify-between">
+      <div className="mx-auto max-w-[1400px] px-6 md:px-12 py-3 md:py-4 flex items-center justify-between">
 
         {/* Logo */}
    <a href="#inicio" className="flex items-center gap-2">
-  <img
-    src="/images/logo.png"
-    alt="Logo"
-    className="h-14 w-auto"
-  />
+ <img
+  src="/images/logo.png"
+  alt="Logo"
+  className="h-12 md:h-12 w-auto"
+/>
 </a>
 
         <div className="flex items-center gap-4">
