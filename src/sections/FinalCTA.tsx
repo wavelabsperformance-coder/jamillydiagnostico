@@ -49,7 +49,11 @@ export function FinalCTA() {
 
         <Reveal delay={0.4}>
           <div className="mt-16 inline-block">
-            <CTAButton href={waLink()} variant="primary">
+            <CTAButton
+  href={waLink()}
+  variant="primary"
+  analyticsEvent="whatsapp_click"
+>
               Agendar minha imersão
             </CTAButton>
           </div>

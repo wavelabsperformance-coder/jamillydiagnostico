@@ -187,6 +187,7 @@ border-white/10
             href={waLink()}
             target="_blank"
             rel="noreferrer"
+            data-analytics="whatsapp_click"
             className="
               text-xs
               tracking-[0.25em]

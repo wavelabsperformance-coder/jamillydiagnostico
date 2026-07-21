@@ -156,6 +156,7 @@ export function Hero() {
               <CTAButton
                 href={waLink()}
                 variant="primary"
+                analyticsEvent="whatsapp_click"
                 className="
                   w-full
                   md:w-auto

@@ -6,11 +6,13 @@ export function CTAButton({
   children,
   variant = "primary",
   className = "",
+  analyticsEvent,
 }: {
   href: string;
   children: ReactNode;
   variant?: "primary" | "ghost" | "light";
   className?: string;
+  analyticsEvent?: string;
 }) {
   const base =
     "group inline-flex items-center justify-center gap-4 whitespace-nowrap text-[11px] tracking-[0.25em] uppercase font-medium transition-all duration-300 px-6 py-5 md:px-10 md:py-6 no-underline";
@@ -27,6 +29,7 @@ export function CTAButton({
       href={href}
       target="_blank"
       rel="noreferrer"
+      data-analytics={analyticsEvent}
       className={`${base} ${styles} ${className}`}
     >
       <span className="whitespace-nowrap">

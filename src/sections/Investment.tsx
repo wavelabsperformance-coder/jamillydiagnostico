@@ -48,7 +48,7 @@ export function Investment() {
         <p className="text-[#C6A86A] text-xs uppercase tracking-[0.25em]">
           Formato
         </p>
-
+ 
         <p className="mt-3 text-[#F8F2EB] text-lg">
           Presencial
         </p>
@@ -84,6 +84,7 @@ export function Investment() {
   <CTAButton
     href={waLink()}
     variant="primary"
+    analyticsEvent="whatsapp_click"
     className="bg-[#F8F2EB] text-[#260404] hover:bg-[#260404] hover:text-[#F8F2EB] transition-all duration-300"
   >
     Agendar minha imersão
