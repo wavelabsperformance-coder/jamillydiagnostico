@@ -181,25 +181,82 @@
   >
 
   <!-- ========================================= -->
-  <!-- SCHEMA -->
-  <!-- ========================================= -->
+<!-- SCHEMA -->
+<!-- ========================================= -->
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Imersão que Transforma",
-    "url": "https://www.imersaoquetransforma.com.br",
-    "description": "Processo estratégico individual conduzido por Jamilly Pacheco para promover clareza emocional, mental e estratégica.",
-    "provider": {
-      "@type": "Person",
-      "name": "Jamilly Pacheco"
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": "Organization",
+      "@id": "https://www.imersaoquetransforma.com.br/#organization",
+      "name": "Imersão que Transforma",
+      "url": "https://www.imersaoquetransforma.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.imersaoquetransforma.com.br/logo.png"
+      },
+      "image": "https://www.imersaoquetransforma.com.br/og-image.jpg",
+      "sameAs": [
+        "https://www.instagram.com/jamillypacheco/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+55 79 99920-1224",
+        "contactType": "customer support",
+        "areaServed": "BR",
+        "availableLanguage": "Portuguese"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "BR"
+      }
     },
-    "image": "https://www.imersaoquetransforma.com.br/og-image.jpg",
-    "areaServed": "Brasil",
-    "inLanguage": "pt-BR"
-  }
-  </script>
+
+    {
+      "@type": "Person",
+      "@id": "https://www.imersaoquetransforma.com.br/#person",
+      "name": "Jamilly Pacheco",
+      "jobTitle": "Mentora e Facilitadora",
+      "worksFor": {
+        "@id": "https://www.imersaoquetransforma.com.br/#organization"
+      },
+      "sameAs": [
+        "https://www.instagram.com/jamillypacheco/"
+      ]
+    },
+
+    {
+      "@type": "Event",
+      "@id": "https://www.imersaoquetransforma.com.br/#event",
+      "name": "Imersão que Transforma",
+      "description": "Uma experiência conduzida por Jamilly Pacheco para promover clareza emocional, mental e estratégica.",
+      "image": [
+        "https://www.imersaoquetransforma.com.br/og-image.jpg"
+      ],
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "organizer": {
+        "@id": "https://www.imersaoquetransforma.com.br/#organization"
+      },
+      "performer": {
+        "@id": "https://www.imersaoquetransforma.com.br/#person"
+      },
+      "inLanguage": "pt-BR",
+      "location": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "BR"
+        }
+      }
+    }
+
+  ]
+}
+</script>
 
 </head>
 
